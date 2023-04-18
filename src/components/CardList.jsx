@@ -56,28 +56,7 @@ const CardList = () => {
             );
           })}
 
-        {/* <div className="card">
-          <h2 className="card-title">A NEW HOPE</h2>
-          <p className="date">May 25, 1977</p>
-          <p className="text">
-            It is a period of civil war. Rebel spaceships, striking from a
-            hidden base, have won their first victory against the evil Galactic
-            Empire. During the battle, Rebel spies managed to steal secret plans
-            to the Empire's ultimate weapon, the DEATH STAR, ...
-          </p>
-          <p className="more-info">More Info</p>
-        </div>
-        <div className="card">
-          <h2 className="card-title">A NEW HOPE</h2>
-          <p className="date">May 25, 1977</p>
-          <p className="text">
-            It is a period of civil war. Rebel spaceships, striking from a
-            hidden base, have won their first victory against the evil Galactic
-            Empire. During the battle, Rebel spies managed to steal secret plans
-            to the Empire's ultimate weapon, the DEATH STAR, ...
-          </p>
-          <p className="more-info">More Info</p>
-        </div>  */}
+       
       </div>
     </>
   );
