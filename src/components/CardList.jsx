@@ -41,22 +41,22 @@ const CardList = () => {
         {data &&
           data.map(function (item) {
             return (
-              <div className="card" key={item.episode_id}>
-                <h2 className="card-title">{item.title}</h2>
-                <p className="date">
-                  {new Date(item.release_date).toLocaleDateString("en-US", {
-                    month: "long",
-                    day: "numeric",
-                    year: "numeric",
-                  })}
-                </p>
-                <p className="text">{limitWords(item.opening_crawl, 260)}</p>
-                <p className="more-info">More Info</p>
+              <div className="card-holder">
+                <div className="card" key={item.episode_id}>
+                  <h2 className="card-title">{item.title}</h2>
+                  <p className="date">
+                    {new Date(item.release_date).toLocaleDateString("en-US", {
+                      month: "long",
+                      day: "numeric",
+                      year: "numeric",
+                    })}
+                  </p>
+                  <p className="text">{limitWords(item.opening_crawl, 260)}</p>
+                  <p className="more-info">More Info</p>
+                </div>
               </div>
             );
           })}
-
-       
       </div>
     </>
   );
