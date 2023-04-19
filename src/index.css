@@ -39,26 +39,29 @@ body {
   grid-template-columns: repeat(3, 1fr);
   padding: 2rem;
   justify-items: center;
-  max-width: 90%;
-  width: 100%;
-  gap: 1.5rem;
+  max-width: 95%;
+  /* width: 90%; */
+  gap: 3rem;
   max-width: 1240px;
 }
 
 .card {
-  padding: 2rem 2.8rem;
+  padding: 1.6rem 2.8rem 1.5rem 2rem;
   border-radius: 0.5rem;
   max-width: 350px;
   line-height: 1.4;
+  /* background-size: 130%; */
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   box-shadow: transparent 0px 0px 10px 3px, rgb(0, 0, 0) 0px 0px 10px;
+  transition: all 0.3s;
+  /* color: #99edfc; */
 }
 
 .card:hover {
-  box-shadow: rgba(121, 121, 251, 0.12) 0px 2px 4px 0px,
-    rgba(121, 121, 251, 0.82) 0px 2px 16px 0px;
+  box-shadow: rgba(72, 202, 228, 0.82) 0px 2px 4px 0px,
+    rgba(72, 202, 228, 0.82) 0px 2px 16px 0px;
   /* box-shadow: rgba(63, 63, 250, 0.35) 0px 5px 15px; */
 }
 
@@ -94,7 +97,9 @@ body {
   -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
   overflow: hidden; */
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+  font-size: 1.59rem;
 }
 
 .more-info {
@@ -198,7 +203,6 @@ body {
 @media screen and (max-width: 650px) {
   .card-container {
     grid-template-columns: 1fr;
-    gap: 3rem;
   }
 
   .logo {
