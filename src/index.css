@@ -60,9 +60,10 @@ body {
 }
 
 .card:hover {
-  box-shadow: rgba(72, 202, 228, 0.82) 0px 2px 4px 0px,
+  box-shadow: rgba(72, 202, 228, 0.12) 0px 3px 3px 0px,
     rgba(72, 202, 228, 0.82) 0px 2px 16px 0px;
   /* box-shadow: rgba(63, 63, 250, 0.35) 0px 5px 15px; */
+  border-radius: none;
 }
 
 .card:nth-child(1) {
