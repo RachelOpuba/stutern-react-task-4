@@ -9,8 +9,8 @@ function App() {
     <>
       <div className="app">
         <Routes>
-          <Route path="/" element={<CardList />} />
-          <Route path="/:id" element={<CardDetails />} />
+          <Route path="/stutern-react-task-4" element={<CardList />} />
+          <Route path="/stutern-react-task-4/:id" element={<CardDetails />} />
           <Route path="/test" element={<TestCard />} />
         </Routes>
       </div>

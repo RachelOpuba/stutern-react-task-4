@@ -17,6 +17,7 @@ const CardDetails = () => {
   const [species, setSpecies] = useState([]);
   const [starships, setStarships] = useState([]);
   const [vehicles, setVehicles] = useState([]);
+
   useEffect(() => {
     const getData = async () => {
       try {
@@ -83,7 +84,12 @@ const CardDetails = () => {
             )}
             <div className="info-container">
               <div className="holder">
-                <p className="back"> &larr; Back to list</p>
+                <Link
+                  to="/stutern-react-task-4"
+                  style={{ textDecoration: "none" }}
+                >
+                  <p className="back"> &larr; Back to list</p>
+                </Link>
                 <div className="info-heading">
                   <h2 className="info-heading-primary">{data.title}</h2>
                   <p className="info-heading-secondary">{data.director}</p>

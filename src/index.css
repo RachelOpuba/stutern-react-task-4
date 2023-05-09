@@ -185,6 +185,7 @@ body {
 /* DETAILS PAGE STYLES */
 .back {
   color: rgb(157, 157, 157);
+  cursor: pointer;
 }
 .info-container {
   width: 100%;

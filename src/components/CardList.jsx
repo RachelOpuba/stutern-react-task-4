@@ -55,7 +55,10 @@ const CardList = () => {
                     })}
                   </p>
                   <p className="text">{limitWords(item.opening_crawl, 260)}</p>
-                  <Link to={`/${index + 1}`} style={{ textDecoration: "none" }}>
+                  <Link
+                    to={`/stutern-react-task-4/${index + 1}`}
+                    style={{ textDecoration: "none" }}
+                  >
                     <p className="more-info">More Info</p>
                   </Link>
                 </div>
