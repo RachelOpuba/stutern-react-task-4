@@ -1,6 +1,8 @@
+import Header from "./Header";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Loading from "./Loading";
+import { Link } from "react-router-dom";
 
 const CardList = () => {
   const [data, setData] = useState(null);
@@ -32,6 +34,7 @@ const CardList = () => {
   };
   return (
     <>
+      <Header />
       <div className="card-container">
         {loading && <Loading />}
         {error && (
@@ -39,7 +42,7 @@ const CardList = () => {
         )}
 
         {data &&
-          data.map(function (item) {
+          data.map(function (item, index) {
             return (
               <div className="card-holder">
                 <div className="card" key={item.episode_id}>
@@ -52,7 +55,9 @@ const CardList = () => {
                     })}
                   </p>
                   <p className="text">{limitWords(item.opening_crawl, 260)}</p>
-                  <p className="more-info">More Info</p>
+                  <Link to={`/${index + 1}`}>
+                    <p className="more-info">More Info</p>
+                  </Link>
                 </div>
               </div>
             );
